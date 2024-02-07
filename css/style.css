@@ -5,29 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
     color: white;
-    
 }
-
-img {
-	max-width: 100%;
-}
-
-a {
-	text-decoration: none;
-	color: currentColor;
-}
-
-.row
-{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.row.layout{
-    min-height: calc(100vh - 100px);
-}
-
-
 
 /* HEADER */
 
@@ -40,22 +18,50 @@ a {
     align-content: space-between;
     flex-direction: column;
     gap: 20px;
+    height: calc(100vh - 100px);
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .links{
     flex-grow: 1;
 }
 
-/* MAIN */
+/* PAGE */
 
-.main{
-    background-color: #141922;
-    flex-grow: 1;
+main{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* left: 200px;
+    width: calc(50vw - 200px); */
 }
 
-.login-flex{
+.login-page{
+    display: flex;
+    flex-wrap: wrap;
+     width: calc(100vw - 200px);
+    position: relative;
+    left: 200px;
+} 
+
+.page{
+    background-color: #141922;
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.login{
     display: flex;
     justify-content: flex-end;
+    padding: 20px;
+    background-color: #0E121A;
+    width: 100vw;
+    
 }
 
 .button{
@@ -65,27 +71,6 @@ a {
     line-height: 40px;
     font-size: 25px;
     padding: 0 5px;
-}
-
-.login{
-    padding: 20px;
-    background-color: #0E121A;
-}
-
-/* MAIN SECTION */
-
-.section-1{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-}
-
-.section-2{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
 }
 
 h1{
@@ -104,7 +89,8 @@ h1{
     height: 100px;
     align-items: center;
     padding: 0 20px;
-
+    position: fixed;
+    bottom: 0;
 }
 
 .links-footer{
@@ -113,11 +99,4 @@ h1{
 	align-items: center;
 	gap: 30px;   
 	justify-content: space-around;
-
-} 
-
-
-
-
-
-
+}
