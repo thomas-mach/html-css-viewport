@@ -11,7 +11,7 @@
 
 .header{
     padding: 25px;
-    width: 200px;
+    width: 150px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -33,20 +33,18 @@
 main{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    /* left: 200px;
-    width: calc(50vw - 200px); */
 }
 
-.login-page{
+.page{
     display: flex;
     flex-wrap: wrap;
-     width: calc(100vw - 200px);
+    width: calc(100% - 150px);
     position: relative;
-    left: 200px;
+    left: 150px;
+    padding-bottom: 100px;
 } 
 
-.page{
+.page_section{
     background-color: #141922;
     flex-grow: 1;
     padding: 20px;
